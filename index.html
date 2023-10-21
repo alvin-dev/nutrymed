@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6B3680" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nutrymed</title>
+  </head>
+  <body>
+    <section id="head-line">
+      <div class="wrapper">
+        <div class="col-a">
+          <ul class="mail-phone">
+            <li>
+              <svg
+                width="23"
+                height="23"
+                viewBox="0 0 23 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.1801 16.5362V20.8934C22.1802 21.2054 22.062 21.5058 21.8494 21.734C21.6367 21.9623 21.3453 22.1013 21.0341 22.1232C20.4956 22.1601 20.0557 22.1799 19.7156 22.1799C8.82645 22.1799 0 13.3534 0 2.46421C0 2.12412 0.0184834 1.68421 0.0566825 1.14573C0.0785205 0.834521 0.217588 0.543182 0.445824 0.330497C0.67406 0.117812 0.974474 -0.000385148 1.28645 -0.000243824H5.6436C5.79645 -0.000398581 5.94389 0.0562646 6.0573 0.158738C6.1707 0.261212 6.24197 0.40218 6.25725 0.554259C6.28559 0.837671 6.31147 1.06317 6.33611 1.23445C6.581 2.94345 7.08285 4.60562 7.82464 6.16459C7.94171 6.41104 7.86531 6.70554 7.64351 6.86326L4.98436 8.76336C6.61023 12.5518 9.6293 15.5709 13.4177 17.1967L15.3154 14.5425C15.3929 14.4341 15.5061 14.3563 15.6351 14.3227C15.7641 14.2892 15.9009 14.302 16.0214 14.3589C17.5802 15.0993 19.2419 15.5999 20.9503 15.8437C21.1216 15.8684 21.3471 15.8955 21.6281 15.9226C21.7799 15.9382 21.9206 16.0096 22.0228 16.1229C22.125 16.2363 22.1815 16.3836 22.1813 16.5362H22.1801Z"
+                  fill="white"
+                />
+              </svg>
+
+              <span>+55 62 3101.8771</span>
+            </li>
+
+            <li>
+              <svg
+                width="25"
+                height="20"
+                viewBox="0 0 25 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.23223 -0.000244141H23.4123C23.7391 -0.000244141 24.0526 0.115155 24.2836 0.320566C24.5147 0.525977 24.6446 0.804574 24.6446 1.09507V18.6201C24.6446 18.9106 24.5147 19.1892 24.2836 19.3946C24.0526 19.6 23.7391 19.7154 23.4123 19.7154H1.23223C0.90542 19.7154 0.591999 19.6 0.360911 19.3946C0.129824 19.1892 0 18.9106 0 18.6201V1.09507C0 0.804574 0.129824 0.525977 0.360911 0.320566C0.591999 0.115155 0.90542 -0.000244141 1.23223 -0.000244141ZM12.3962 9.51036L4.49517 3.54638L2.89943 5.21564L12.4122 12.3954L21.7537 5.21016L20.142 3.55295L12.3962 9.51036Z"
+                  fill="white"
+                />
+              </svg>
+
+              <span>
+                <a href="mailto:contato@nutrymed.com.br"
+                  >contato@nutrymed.com.br</a
+                >
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-b">
+          <ul class="social-links">
+            <li>
+              <a href="https://wa.me/6231018771" target="_blank">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.7048 3.19478C16.6483 1.13348 13.9078 0 10.9952 0C4.98348 0 0.0908695 4.89261 0.0908695 10.8996C0.0908695 12.8174 0.593043 14.697 1.54478 16.3517L0 22L5.78217 20.4839C7.37478 21.3543 9.16348 21.8087 10.9904 21.8087H10.9952C16.9974 21.8087 22 16.9161 22 10.9043C22 7.99652 20.7613 5.26087 18.7048 3.19478ZM10.9952 19.9722C9.36435 19.9722 7.76696 19.537 6.38 18.7096L6.05 18.5135L2.62087 19.4126L3.53435 16.0696L3.31913 15.7252C2.41043 14.2809 1.93217 12.6165 1.93217 10.9043C1.93217 5.9113 5.99739 1.84609 10.9952 1.84609C13.4152 1.84609 15.6917 2.78826 17.3991 4.50043C19.1065 6.21261 20.1587 8.48913 20.1539 10.9091C20.1587 15.907 15.9883 19.9722 10.9952 19.9722Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M15.9643 13.1856C15.6965 13.0469 14.3526 12.3916 14.1039 12.3008C13.8552 12.2051 13.6735 12.1621 13.4917 12.4395C13.31 12.7169 12.7887 13.3243 12.6261 13.5108C12.4682 13.6925 12.3056 13.7164 12.0378 13.5777C10.4356 12.779 9.38824 12.1477 8.33128 10.3351C8.0491 9.85208 8.61345 9.89034 9.12997 8.84773C9.22084 8.66599 9.17302 8.50816 9.10606 8.36947C9.0391 8.23077 8.49389 6.89164 8.26432 6.34642C8.04432 5.81556 7.81954 5.89208 7.65215 5.87773C7.49432 5.86816 7.31258 5.86816 7.13084 5.86816C6.94911 5.86816 6.65258 5.93512 6.40389 6.20773C6.15519 6.48512 5.45215 7.14034 5.45215 8.47947C5.45215 9.8186 6.4278 11.1147 6.56171 11.2964C6.70041 11.4782 8.47954 14.2282 11.2152 15.4095C12.9417 16.1556 13.6208 16.2177 14.4865 16.0934C15.0126 16.0169 16.0982 15.4334 16.323 14.7973C16.5478 14.1612 16.5478 13.616 16.4808 13.5012C16.4139 13.3864 16.2321 13.3195 15.9643 13.1856Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/nutrymedoficial/"
+                target="_blank"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6 0H14C17.3137 0 20 2.76378 20 6.17307V14.4038C20 17.8131 17.3137 20.5769 14 20.5769H6C2.68629 20.5769 0 17.8131 0 14.4038V6.17307C0 2.76378 2.68629 0 6 0ZM16 3.08654C16.5 3.08654 17 3.60096 17 4.11538C17 4.62981 16.5 5.14423 16 5.14423C15.5 5.14423 15 4.62981 15 4.11538C15 3.60096 15.5 3.08654 16 3.08654ZM15 10.2885C15 7.45141 12.7575 5.14423 10 5.14423C7.2425 5.14423 5 7.45141 5 10.2885C5 13.1255 7.2425 15.4327 10 15.4327C12.7575 15.4327 15 13.1255 15 10.2885ZM10 7.20192C8.34315 7.20192 7 8.58381 7 10.2885C7 11.9931 8.34315 13.375 10 13.375C11.6569 13.375 13 11.9931 13 10.2885C13 8.58381 11.6569 7.20192 10 7.20192Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <nav id="navigationn">
+      <div class="wrapper">
+        <a class="logo" href="./index.html">
+          <img src="./assets/LOGO-COLORIDA-GRANDE.png" alt="Logo Nutrymed" />
+        </a>
+
+        <div class="divider"></div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="./index.html" onclick="closeMenu()">Home</a>
+            </li>
+            <li>
+              <a href="./quem-somos.html" onclick="closeMenu()">Sobre Nós</a>
+            </li>
+            <li>
+              <a href="./nossos-servicos.html" onclick="closeMenu()"
+                >Serviços</a
+              >
+            </li>
+            <li>
+              <a href="./contact.html" onclick="closeMenu()">Contato</a>
+            </li>
+          </ul>
+
+          <a class="button-menu" onclick="closeMenu()" href="./cotacao.html"
+            >Faça uma Cotação</a
+          >
+
+          <ul class="social-links">
+            <li>
+              <a href="https://wa.me/6231018771" target="_blank">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.7048 3.19478C16.6483 1.13348 13.9078 0 10.9952 0C4.98348 0 0.0908695 4.89261 0.0908695 10.8996C0.0908695 12.8174 0.593043 14.697 1.54478 16.3517L0 22L5.78217 20.4839C7.37478 21.3543 9.16348 21.8087 10.9904 21.8087H10.9952C16.9974 21.8087 22 16.9161 22 10.9043C22 7.99652 20.7613 5.26087 18.7048 3.19478ZM10.9952 19.9722C9.36435 19.9722 7.76696 19.537 6.38 18.7096L6.05 18.5135L2.62087 19.4126L3.53435 16.0696L3.31913 15.7252C2.41043 14.2809 1.93217 12.6165 1.93217 10.9043C1.93217 5.9113 5.99739 1.84609 10.9952 1.84609C13.4152 1.84609 15.6917 2.78826 17.3991 4.50043C19.1065 6.21261 20.1587 8.48913 20.1539 10.9091C20.1587 15.907 15.9883 19.9722 10.9952 19.9722Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M15.9643 13.1856C15.6965 13.0469 14.3526 12.3916 14.1039 12.3008C13.8552 12.2051 13.6735 12.1621 13.4917 12.4395C13.31 12.7169 12.7887 13.3243 12.6261 13.5108C12.4682 13.6925 12.3056 13.7164 12.0378 13.5777C10.4356 12.779 9.38824 12.1477 8.33128 10.3351C8.0491 9.85208 8.61345 9.89034 9.12997 8.84773C9.22084 8.66599 9.17302 8.50816 9.10606 8.36947C9.0391 8.23077 8.49389 6.89164 8.26432 6.34642C8.04432 5.81556 7.81954 5.89208 7.65215 5.87773C7.49432 5.86816 7.31258 5.86816 7.13084 5.86816C6.94911 5.86816 6.65258 5.93512 6.40389 6.20773C6.15519 6.48512 5.45215 7.14034 5.45215 8.47947C5.45215 9.8186 6.4278 11.1147 6.56171 11.2964C6.70041 11.4782 8.47954 14.2282 11.2152 15.4095C12.9417 16.1556 13.6208 16.2177 14.4865 16.0934C15.0126 16.0169 16.0982 15.4334 16.323 14.7973C16.5478 14.1612 16.5478 13.616 16.4808 13.5012C16.4139 13.3864 16.2321 13.3195 15.9643 13.1856Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/nutrymedoficial/"
+                target="_blank"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6 0H14C17.3137 0 20 2.76378 20 6.17307V14.4038C20 17.8131 17.3137 20.5769 14 20.5769H6C2.68629 20.5769 0 17.8131 0 14.4038V6.17307C0 2.76378 2.68629 0 6 0ZM16 3.08654C16.5 3.08654 17 3.60096 17 4.11538C17 4.62981 16.5 5.14423 16 5.14423C15.5 5.14423 15 4.62981 15 4.11538C15 3.60096 15.5 3.08654 16 3.08654ZM15 10.2885C15 7.45141 12.7575 5.14423 10 5.14423C7.2425 5.14423 5 7.45141 5 10.2885C5 13.1255 7.2425 15.4327 10 15.4327C12.7575 15.4327 15 13.1255 15 10.2885ZM10 7.20192C8.34315 7.20192 7 8.58381 7 10.2885C7 11.9931 8.34315 13.375 10 13.375C11.6569 13.375 13 11.9931 13 10.2885C13 8.58381 11.6569 7.20192 10 7.20192Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="open-menu"
+          onclick="openMenu()"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          class="close-menu"
+          onclick="closeMenu()"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h1>A primeira licenciadora de marcas de cosméticos</h1>
+            <p>
+              A Dalprize é especializada em recuperação de marcas no segmento de
+              Higiene Pessoal, Perfumaria e Cosméticos.
+            </p>
+          </header>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>
+              A Dalprize é composta por uma equipe única que gere e administra
+              os departamentos corporativos:
+            </h2>
+          </header>
+
+          <div class="content">
+            <ul>
+              <li>Gestão de negócios</li>
+              <li>Gestão Financeira (capital de giro)</li>
+              <li>Logística e Produção</li>
+              <li>Vendas e Canais de distribuição</li>
+              <li>Sinergia de Compras e Aumento de receitas</li>
+            </ul>
+
+            <a class="button" href="./nossos-servicos.html"> Ver Mais </a>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <img
+            src="./assets/empresa.png"
+            alt="Homem usando um moderno smartphone enquanto está sentado em casa"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>
+              Presente em 90% do território nacional com vendas e distribuição
+            </h2>
+          </header>
+        </div>
+
+        <div class="col-b">
+          <img src="./assets/map-dalprize.png" alt="Mapa Dalprize" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrapper">
+        <header>
+          <h2>Fácil e Rápido</h2>
+          <p>Em três passos simples você pode dar início a negociação.</p>
+        </header>
+
+        <div class="content">
+          <div class="cards">
+            <div class="card">
+              <span>1</span>
+              <img src="./assets/icons/mail-send-line.svg" alt="" />
+              <h3>Agende seu atendimento</h3>
+              <p>
+                Preencha o formulário de contato pelo site e aguarde o nosso
+                contato.
+              </p>
+            </div>
+
+            <div class="card">
+              <span>2</span>
+              <img src="./assets/icons/todo-line.svg" alt="" />
+              <h3>Negócio Fechado !</h3>
+              <p>
+                Se sua empresa estiver de acordo com os critérios o acordo será
+                fechado.
+              </p>
+            </div>
+
+            <div class="card">
+              <span>3</span>
+              <img src="./assets/icons/service-line.svg" alt="" />
+              <h3>Bem-estar mental</h3>
+              <p>
+                Se sua empresa estiver de acordo com os critérios o acordo será
+                fechado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="about-us">
+      <div class="wrapper">
+        <header>
+          <h4>Quem Somos</h4>
+          <h2>Missão, Visão e Valores</h2>
+        </header>
+
+        <div class="content">
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/icons/missao.svg" alt="imagem missao" />
+              <h3>missão</h3>
+              <p>
+                A missão da Dalprize é oferecer para empresas estratégia de
+                gestão, captação de capital de giro, sinergia de compras, vendas
+                e distribuição, aumento do poder de negociação no mercado diante
+                de fornecedores, clientes e distribuidores, acesso a novos
+                canais de distribuição e aumento de receitas e lucros
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/icons/visao.svg" alt="imagem visao" />
+              <h3>visão</h3>
+              <p>
+                Seu foco é voltado para marcas com mais de 20 anos no mercado e
+                que estão estagnadas, enfrentando dificuldades de gestão em
+                diversos aspectos, como ausência de capital de giro,
+                ineficiência em compras, vendas e distribuição.
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/icons/valores.svg" alt="imagem valores" />
+              <h3>valores</h3>
+              <p>
+                Na condução de qualquer negócio, nossos colaboradores
+                orientam-se pelos pilares da(o):
+                <li>Ética</li>
+                <li>Transparência</li>
+                <li>Objetividade</li>
+                <li>Compromisso com o resultado</li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="marcas">
+      <div class="wrapper">
+        <div class="stats">
+          <div class="stat">
+            <img src="assets/marcas/FORCEMED.png" alt="logo Forcemed" />
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="stat">
+            <img src="assets/marcas/FORHEALTH.png" alt="logo Forhealth" />
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="stat">
+            <img src="assets/marcas/NEW-TIME.png" alt="logo New Time" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrapper">
+        <div class="col-a">
+          <a class="logo" href="#home">
+            <img src="./assets/LOGO-BRANCA.png" alt="Logo Dalprise" />
+          </a>
+
+          <p>
+            Av. Mal. Rondon, 2131 <br />
+            Res. Morumbi, Goiânia - GO
+          </p>
+
+          <p>40.624.113/0001-82</p>
+        </div>
+
+        <div class="col-b">
+          <div class="services-footer">
+            <p>Serviços</p>
+            <ul>
+              <div class="services-a">
+                <li>
+                  <a href="./nossos-servicos.html">Envase</a>
+                </li>
+                <li>
+                  <a href="./nossos-servicos.html">Blister</a>
+                </li>
+                <li>
+                  <a href="./nossos-servicos.html">Revestimento</a>
+                </li>
+                <li>
+                  <a href="./nossos-servicos.html">Rotulagem</a>
+                </li>
+              </div>
+              <div class="services-b">
+                <li>
+                  <a href="./nossos-servicos.html">Encapsulamento</a>
+                </li>
+                <li>
+                  <a href="./nossos-servicos.html">Compressão</a>
+                </li>
+                <li>
+                  <a href="./nossos-servicos.html">Codificação</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-c">
+          <div class="menu-footer">
+            <ul>
+              <p>Sobre</p>
+              <li>
+                <a href="./quem-somos.html">Missão</a>
+              </li>
+              <li>
+                <a href="./nossos-servicos.html">Visão</a>
+              </li>
+              <li>
+                <a href="./marcas-produtos.html">Valores</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-d">
+          <div class="mail-phone">
+            <ul>
+              <p>Contato</p>
+              <li>
+                <svg
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.1801 16.5362V20.8934C22.1802 21.2054 22.062 21.5058 21.8494 21.734C21.6367 21.9623 21.3453 22.1013 21.0341 22.1232C20.4956 22.1601 20.0557 22.1799 19.7156 22.1799C8.82645 22.1799 0 13.3534 0 2.46421C0 2.12412 0.0184834 1.68421 0.0566825 1.14573C0.0785205 0.834521 0.217588 0.543182 0.445824 0.330497C0.67406 0.117812 0.974474 -0.000385148 1.28645 -0.000243824H5.6436C5.79645 -0.000398581 5.94389 0.0562646 6.0573 0.158738C6.1707 0.261212 6.24197 0.40218 6.25725 0.554259C6.28559 0.837671 6.31147 1.06317 6.33611 1.23445C6.581 2.94345 7.08285 4.60562 7.82464 6.16459C7.94171 6.41104 7.86531 6.70554 7.64351 6.86326L4.98436 8.76336C6.61023 12.5518 9.6293 15.5709 13.4177 17.1967L15.3154 14.5425C15.3929 14.4341 15.5061 14.3563 15.6351 14.3227C15.7641 14.2892 15.9009 14.302 16.0214 14.3589C17.5802 15.0993 19.2419 15.5999 20.9503 15.8437C21.1216 15.8684 21.3471 15.8955 21.6281 15.9226C21.7799 15.9382 21.9206 16.0096 22.0228 16.1229C22.125 16.2363 22.1815 16.3836 22.1813 16.5362H22.1801Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <span>+55 62 3101.8771</span>
+              </li>
+
+              <li>
+                <svg
+                  width="25"
+                  height="20"
+                  viewBox="0 0 25 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.23223 -0.000244141H23.4123C23.7391 -0.000244141 24.0526 0.115155 24.2836 0.320566C24.5147 0.525977 24.6446 0.804574 24.6446 1.09507V18.6201C24.6446 18.9106 24.5147 19.1892 24.2836 19.3946C24.0526 19.6 23.7391 19.7154 23.4123 19.7154H1.23223C0.90542 19.7154 0.591999 19.6 0.360911 19.3946C0.129824 19.1892 0 18.9106 0 18.6201V1.09507C0 0.804574 0.129824 0.525977 0.360911 0.320566C0.591999 0.115155 0.90542 -0.000244141 1.23223 -0.000244141ZM12.3962 9.51036L4.49517 3.54638L2.89943 5.21564L12.4122 12.3954L21.7537 5.21016L20.142 3.55295L12.3962 9.51036Z"
+                    fill="white"
+                  />
+                </svg>
+
+                <span>
+                  <a href="mailto:contato@nutrymed.com.br"
+                    >contato@nutrymed.com.br</a
+                  >
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="social-links">
+            <li>
+              <a href="https://wa.me/6231018771" target="_blank">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.7048 3.19478C16.6483 1.13348 13.9078 0 10.9952 0C4.98348 0 0.0908695 4.89261 0.0908695 10.8996C0.0908695 12.8174 0.593043 14.697 1.54478 16.3517L0 22L5.78217 20.4839C7.37478 21.3543 9.16348 21.8087 10.9904 21.8087H10.9952C16.9974 21.8087 22 16.9161 22 10.9043C22 7.99652 20.7613 5.26087 18.7048 3.19478ZM10.9952 19.9722C9.36435 19.9722 7.76696 19.537 6.38 18.7096L6.05 18.5135L2.62087 19.4126L3.53435 16.0696L3.31913 15.7252C2.41043 14.2809 1.93217 12.6165 1.93217 10.9043C1.93217 5.9113 5.99739 1.84609 10.9952 1.84609C13.4152 1.84609 15.6917 2.78826 17.3991 4.50043C19.1065 6.21261 20.1587 8.48913 20.1539 10.9091C20.1587 15.907 15.9883 19.9722 10.9952 19.9722Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M15.9643 13.1856C15.6965 13.0469 14.3526 12.3916 14.1039 12.3008C13.8552 12.2051 13.6735 12.1621 13.4917 12.4395C13.31 12.7169 12.7887 13.3243 12.6261 13.5108C12.4682 13.6925 12.3056 13.7164 12.0378 13.5777C10.4356 12.779 9.38824 12.1477 8.33128 10.3351C8.0491 9.85208 8.61345 9.89034 9.12997 8.84773C9.22084 8.66599 9.17302 8.50816 9.10606 8.36947C9.0391 8.23077 8.49389 6.89164 8.26432 6.34642C8.04432 5.81556 7.81954 5.89208 7.65215 5.87773C7.49432 5.86816 7.31258 5.86816 7.13084 5.86816C6.94911 5.86816 6.65258 5.93512 6.40389 6.20773C6.15519 6.48512 5.45215 7.14034 5.45215 8.47947C5.45215 9.8186 6.4278 11.1147 6.56171 11.2964C6.70041 11.4782 8.47954 14.2282 11.2152 15.4095C12.9417 16.1556 13.6208 16.2177 14.4865 16.0934C15.0126 16.0169 16.0982 15.4334 16.323 14.7973C16.5478 14.1612 16.5478 13.616 16.4808 13.5012C16.4139 13.3864 16.2321 13.3195 15.9643 13.1856Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/nutrymedoficial/"
+                target="_blank"
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6 0H14C17.3137 0 20 2.76378 20 6.17307V14.4038C20 17.8131 17.3137 20.5769 14 20.5769H6C2.68629 20.5769 0 17.8131 0 14.4038V6.17307C0 2.76378 2.68629 0 6 0ZM16 3.08654C16.5 3.08654 17 3.60096 17 4.11538C17 4.62981 16.5 5.14423 16 5.14423C15.5 5.14423 15 4.62981 15 4.11538C15 3.60096 15.5 3.08654 16 3.08654ZM15 10.2885C15 7.45141 12.7575 5.14423 10 5.14423C7.2425 5.14423 5 7.45141 5 10.2885C5 13.1255 7.2425 15.4327 10 15.4327C12.7575 15.4327 15 13.1255 15 10.2885ZM10 7.20192C8.34315 7.20192 7 8.58381 7 10.2885C7 11.9931 8.34315 13.375 10 13.375C11.6569 13.375 13 11.9931 13 10.2885C13 8.58381 11.6569 7.20192 10 7.20192Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-footer">
+        <div class="wrapper">
+          <p>Copyright © 2023 Nutrymed. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a id="backToTopButton" href="https://wa.me/5521997350805" target="_blank">
+      <svg
+        width="70"
+        height="70"
+        viewBox="0 0 71 70"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_39_2)">
+          <path
+            d="M18.2873 59.9522L19.4184 60.5178C24.1319 63.3457 29.4105 64.6654 34.6895 64.6654C51.28 64.6654 64.8541 51.0914 64.8541 34.5008C64.8541 26.5827 61.6489 18.853 55.9933 13.197C50.3373 7.54108 42.796 4.33622 34.6895 4.33622C18.0989 4.33622 4.5246 17.9103 4.71325 34.6895C4.71325 40.3451 6.41 45.8127 9.23784 50.5257L9.9919 51.657L6.97568 62.7803L18.2873 59.9522Z"
+            fill="#00E676"
+          />
+          <path
+            d="M59.1981 10.1805C52.7881 3.58216 43.9273 0 34.8778 0C15.6481 0 0.188649 15.6478 0.377027 34.6892C0.377027 40.7222 2.07378 46.5668 4.90189 51.8454L0 69.7557L18.2873 65.0424C23.3776 67.8705 29.0332 69.1903 34.6895 69.1903C53.7308 69.1903 69.1903 53.5422 69.1903 34.5011C69.1903 25.263 65.6081 16.5905 59.1984 10.1805H59.1981ZM34.8778 63.3459C29.7876 63.3459 24.6973 62.0265 20.3611 59.387L19.23 58.8214L8.29541 61.6492L11.1232 50.9032L10.3692 49.7719C2.07378 36.3865 6.03297 18.6643 19.607 10.3689C33.1811 2.07378 50.7143 6.03297 59.0097 19.607C67.3049 33.1811 63.3457 50.7143 49.7719 59.0097C45.4354 61.8376 40.1568 63.3457 34.8778 63.3457V63.3459ZM51.4684 42.4195L49.3946 41.4768C49.3946 41.4768 46.3784 40.157 44.493 39.2143C44.3043 39.2143 44.1159 39.0257 43.9273 39.0257C43.3616 39.0257 42.9846 39.2143 42.6076 39.403C42.6076 39.403 42.4192 39.5914 39.7797 42.6078C39.5911 42.9849 39.2141 43.1735 38.837 43.1735H38.6484C38.46 43.1735 38.083 42.9849 37.8943 42.7965L36.9516 42.4195C34.8778 41.4768 32.9927 40.3454 31.4843 38.8373C31.1073 38.4603 30.5416 38.0832 30.1646 37.7062C28.8449 36.3865 27.5251 34.8781 26.5827 33.1814L26.3941 32.8043C26.2057 32.6157 26.2057 32.4273 26.017 32.0503C26.017 31.6732 26.017 31.2962 26.2057 31.1076C26.2057 31.1076 26.9597 30.1649 27.5251 29.5995C27.9024 29.2222 28.0908 28.6568 28.4678 28.2797C28.8449 27.7141 29.0335 26.96 28.8449 26.3943C28.6565 25.4516 26.3941 20.3614 25.8286 19.2303C25.4514 18.6646 25.0746 18.4762 24.5089 18.2876H22.4351C22.0578 18.2876 21.6811 18.4762 21.3038 18.4762L21.1151 18.6646C20.7381 18.8532 20.3611 19.2303 19.9841 19.4186C19.607 19.7959 19.4184 20.1727 19.0414 20.55C17.7216 22.2468 16.9676 24.3205 16.9676 26.3943C16.9676 27.9024 17.3446 29.4108 17.9103 30.7305L18.0989 31.2962C19.7957 34.8781 22.0578 38.0832 25.0746 40.9111L25.8286 41.6651C26.3941 42.2308 26.9597 42.6078 27.3368 43.1732C31.2959 46.567 35.8205 49.0178 40.9108 50.3376C41.4765 50.5259 42.2305 50.5259 42.7962 50.7146H44.6814C45.6241 50.7146 46.7551 50.3376 47.5095 49.9605C48.0749 49.5835 48.4519 49.5835 48.8289 49.2065L49.2062 48.8292C49.5832 48.4522 49.9603 48.2638 50.3373 47.8868C50.7143 47.5097 51.0913 47.1327 51.28 46.7554C51.657 46.0013 51.8454 45.0586 52.0341 44.1162V42.7965C52.0341 42.7965 51.8454 42.6078 51.4684 42.4195Z"
+            fill="white"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_39_2">
+            <rect width="70" height="70" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
