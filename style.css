@@ -12,6 +12,7 @@
   --primary-color: hsla(var(--hue), 35%, 59%, 1);
   --primary-color-light: hsla(var(--hue), 41%, 36%, 0.5);
   --secondary-color: hsla(42, 26%, 46%, 1);
+  --secondary-hover: rgb(102, 89, 62);
   --headline: hsla(210, 11%, 15%, 1);
   --header-bg: hsla(0, 0%, 97%, 1);
   --paragraph: hsla(0, 0%, 34%, 1);
@@ -19,7 +20,7 @@
   --brand-light: hsla(calc(var(--hue) - 22), 23%, 89%, 1);
   --brand-light-2: hsla(calc(var(--hue) + 10), 14%, 97%, 1);
   --green-hover: hsla(var(--hue), 100%, 14%, 1);
-  --black-transparent: hsla(0, 0%, 0%, 0.5);
+  --black-transparent: hsla(0, 0%, 0%, 0.8);
   --bg-light: hsla(180, 14%, 97%, 1);
 
   --gradient: linear-gradient(180deg, #321940 12.97%, #7c4885 96.78%);
@@ -51,6 +52,10 @@ body {
   width: min(50rem, 100%);
   margin-inline: auto;
   padding-inline: 2.4rem;
+}
+
+.bg-section {
+  background-color: #fcfcfd;
 }
 
 ul {
@@ -98,13 +103,13 @@ section p {
 }
 
 .button {
-  background-color: var(--primary-color);
-  padding: 1.6rem 3.2rem;
+  background-color: var(--secondary-color);
+  padding: 1.2rem 3.2rem;
   width: fit-content;
   margin-bottom: 6rem;
 
   border: none;
-  border-radius: 1rem;
+  border-radius: 9rem;
 
   text-transform: uppercase;
   text-decoration: none;
@@ -120,7 +125,7 @@ section p {
 }
 
 .button:hover {
-  background-color: var(--green-hover);
+  background-color: var(--secondary-hover);
 }
 
 .social-links {
@@ -136,7 +141,6 @@ section p {
 
 /*======= Flip Box =======================================================*/
 
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
   background-color: transparent;
   width: 100%;
@@ -161,7 +165,12 @@ section p {
   margin-bottom: 0;
 }
 
+#services .flip-box-front h2 {
+  padding-top: 4rem;
+}
+
 #services.flip .wrapper {
+  display: grid;
   gap: 5rem;
 }
 
@@ -173,7 +182,8 @@ section p {
 /* Position the front and back side */
 .flip-box-front,
 .flip-box-back {
-  background-color: #d9d9d9;
+  /* background-color: #d9d9d9; */
+  background-color: hsla(42, 26%, 46%, 0.2);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -187,6 +197,7 @@ section p {
 /* Style the front side */
 .flip-box-front {
   display: flex;
+  flex-direction: column;
   align-items: center;
   flex: 1;
 
@@ -194,8 +205,8 @@ section p {
 }
 
 .flip-box-front img {
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -506,6 +517,56 @@ body.menu-expanded .close-menu path {
   background-color: #b8b8b9;
 }
 
+#services.home .card {
+  padding: 0;
+  overflow: hidden;
+
+  border-radius: 2rem;
+  border: solid 1px #b1b5c3;
+  box-shadow: none;
+}
+
+#services.home .cards img {
+  width: 100%;
+  height: 27rem;
+
+  object-fit: cover;
+}
+
+#services.home .cards h3 {
+  color: #000;
+}
+
+#services.home .cards .button {
+  margin-bottom: 3rem;
+}
+
+#services.home-services .cards {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#services.home-services .card {
+  border: none;
+  box-shadow: none;
+
+  height: 22rem;
+}
+
+#services.home-services .card h3 {
+  text-align: center;
+  color: black;
+}
+
+#services.home-services .card p {
+  color: black;
+  text-align: center;
+  padding: 0;
+}
+
+#services.home-services .divider {
+  display: none;
+}
+
 /*-- TITLE --*/
 
 #home.title {
@@ -732,26 +793,46 @@ body.menu-expanded .close-menu path {
 /*======= ABOUT  =======================================================*/
 
 #about {
-  background-image: url(./assets/Nanosatelites.jpg);
+  background-image: url(./assets/o-inspetor-financeiro-e-o-secretario-fazem-relatorio-calculam-ou-verificam-o-saldo-documento-de-verificacao-do-inspetor-do-servico-de-receita-federal-conceito-de-auditoria.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 
   text-align: left;
+  padding: 0;
+}
+
+#about .wrapper {
+  width: 100%;
+  padding: 0;
 }
 
 #about h2 {
-  color: white;
+  color: black;
   font-weight: 600;
   font-size: 3.5rem;
   line-height: 4.5rem;
 
   margin: 0;
-  padding: 3rem 2rem;
+}
 
-  background-color: var(--black-transparent);
-  backdrop-filter: blur(5px);
-  border-radius: 0px 30px;
+#about .col-b {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: hsla(var(--hue), 35%, 59%, 0.8);
+
+  padding: 5rem;
+}
+
+#about p {
+  font-size: 2rem;
+  color: #2f2f2f;
+  padding: 0;
+}
+
+#about .button {
+  margin: 0;
 }
 
 /*======= CONTACT  =======================================================*/
@@ -763,7 +844,7 @@ body.menu-expanded .close-menu path {
 #contact .wrapper {
   position: relative;
 
-  grid-template-areas: 'A B';
+  grid-template-areas: 'A A';
 }
 
 #contact h2 {
@@ -957,17 +1038,15 @@ body.menu-expanded .close-menu path {
 
 /*======= ABOUT-US  =======================================================*/
 
-/* #about-us {
-  background-color: var(--header-bg);
-} */
 #about-us .wrapper {
-  grid-auto-rows: 1fr 1fr;
-  grid-template-areas:
-    'A A'
-    'B B'
-    'C C';
-  gap: 20rem;
+  display: grid;
+  gap: 4rem;
 }
+
+#about-us.home .wrapper {
+  grid-template-areas: 'A A';
+}
+
 #about-us .col-a,
 #about-us .col-b,
 #about-us .col-c {
@@ -1041,6 +1120,34 @@ body.menu-expanded .close-menu path {
 }
 
 /*======= FORM  =======================================================*/
+
+#form .wrapper {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'A B';
+
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+#form header {
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#form header p {
+  padding: 0;
+}
+
+#form iframe {
+  border-radius: 2rem;
+  width: 100%;
+  margin-top: 5rem;
+}
+
 .login-box {
   box-sizing: border-box;
   border-radius: 10px;
@@ -1064,6 +1171,8 @@ body.menu-expanded .close-menu path {
 
 .login-box .user-box {
   position: relative;
+  flex-grow: 1;
+  flex-basis: 40%;
 }
 
 .login-box .user-box:nth-child(11),
@@ -1074,12 +1183,12 @@ body.menu-expanded .close-menu path {
 .login-box .user-box input,
 .login-box .user-box textarea {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 16px;
   color: #000;
   margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #000;
+  border: 1px solid #cad1e1;
+  border-radius: 0.4rem;
   outline: none;
   background: transparent;
 }
@@ -1087,27 +1196,132 @@ body.menu-expanded .close-menu path {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 16px;
-  color: #000;
+  color: #95a1bb;
   pointer-events: none;
   transition: 0.5s;
 }
 
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label {
-  top: -20px;
-  left: 0;
+  top: -30px;
+  left: -10px;
   color: var(--primary-color);
   font-size: 12px;
 }
 
 .login-box .user-box textarea:focus ~ label,
 .login-box .user-box textarea:valid ~ label {
-  top: -20px;
-  left: 0;
+  top: -30px;
+  left: -10px;
   color: var(--primary-color);
   font-size: 12px;
+}
+
+.login-box .user-box.full {
+  flex-basis: 100%;
+}
+
+/*======= COTAÇÃO  =======================================================*/
+
+#service-flow .wrapper {
+  display: grid;
+  gap: 9rem;
+}
+
+#service-flow .steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  position: relative;
+
+  padding: 2rem;
+  padding-bottom: 4rem;
+
+  background-color: hsla(42, 26%, 46%, 0.2);
+  border-radius: 2.2rem;
+}
+
+#service-flow .steps span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+
+  width: 8.5rem;
+  height: 8.5rem;
+
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  border: solid white 0.8rem;
+
+  margin-top: -60px;
+  padding: 2rem;
+}
+
+#service-flow .steps h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#service-flow .steps p {
+  padding: 0;
+}
+
+#service-flow .steps::before {
+  position: absolute;
+
+  bottom: 0;
+
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid hsla(42, 26%, 46%, 0.2);
+
+  margin-bottom: -20px;
+}
+
+#service-flow .steps:last-child:before {
+  display: none;
+}
+
+#form.cotacao .wrapper {
+  grid-template-columns: 1fr;
+  grid-template-areas: 'A';
+
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+#form.cotacao header {
+  text-align: center;
+}
+
+#form.cotacao h3 {
+  flex-basis: 100%;
+
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+#form.cotacao .choose {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+
+  font-size: 1.6rem;
 }
 
 /*======= FOOTER  =======================================================*/
@@ -1149,6 +1363,7 @@ p {
 
 footer .social-links {
   justify-content: flex-start;
+  padding-top: 2.5rem;
 }
 
 footer .menu-footer ul,
@@ -1210,6 +1425,10 @@ footer .sub-footer .wrapper {
   padding: 0;
 }
 
+footer .sub-footer p {
+  padding: 0;
+}
+
 /*======= BUTTOM BACK TO TOP  =======================================================*/
 #backToTopButton {
   position: fixed;
@@ -1222,6 +1441,11 @@ footer .sub-footer .wrapper {
 
   transform: translateY(100%);
   transition: all 0.5s;
+}
+
+#backToTopButton img {
+  width: 5rem;
+  height: 5rem;
 }
 
 #backToTopButton path {
@@ -1357,6 +1581,7 @@ footer .sub-footer .wrapper {
 
     background-color: var(--secondary-color);
     border-radius: 9rem;
+    border: solid 1px transparent;
 
     color: white;
 
@@ -1368,8 +1593,8 @@ footer .sub-footer .wrapper {
 
   nav#navigationn .menu a.button-menu:hover {
     background-color: white;
-    border: none;
-    color: var(--primary-color);
+    border: solid 1px var(--secondary-color);
+    color: var(--secondary-color);
   }
 
   nav#navigationn.scroll .menu ul li a {
@@ -1377,7 +1602,6 @@ footer .sub-footer .wrapper {
   }
 
   nav#navigationn.scroll .menu a.button-menu {
-    border-color: white;
     color: white;
   }
 
@@ -1418,9 +1642,9 @@ footer .sub-footer .wrapper {
 
   nav#navigationn.scroll .menu a.button-menu.active,
   nav#navigationn.scroll .menu a.button-menu:hover {
-    background-color: var(--primary-color);
-    filter: brightness(1.3);
-    border: none;
+    background-color: var(--secondary-hover);
+    filter: brightness(1.2);
+    border: solid 1px transparent;
   }
 
   /*======= HOME  ==========================*/
@@ -1436,8 +1660,8 @@ footer .sub-footer .wrapper {
 
   #home .wrapper {
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: 'A A';
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A' 'B';
     height: 100vh;
   }
 
@@ -1447,7 +1671,7 @@ footer .sub-footer .wrapper {
   }
 
   #home h1 {
-    font-size: 5.2rem;
+    font-size: 3.6rem;
   }
 
   #home .content p {
@@ -1502,11 +1726,22 @@ footer .sub-footer .wrapper {
     padding-block: 6rem;
   }
 
+  #services.home-services .divider {
+    width: 0.2rem;
+    height: 10rem;
+    background-color: #e6e8ec;
+    display: block;
+  }
+
   /*-- TITLE --*/
 
   #home.title {
     margin-top: 7.2rem;
     padding-top: var(--nav-height);
+  }
+
+  #home.title .wrapper {
+    grid-template-columns: 1fr;
   }
 
   /*======= SERVICES  ==========================*/
@@ -1530,7 +1765,7 @@ footer .sub-footer .wrapper {
   /*======= ABOUT  ==========================*/
 
   #about .wrapper {
-    grid-template-columns: 48rem 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 
     grid-template-areas: 'A B';
@@ -1540,6 +1775,11 @@ footer .sub-footer .wrapper {
 
   #about .col-a {
     align-self: center;
+  }
+
+  #about .col-b {
+    padding-block: 16rem;
+    padding-inline: 5rem;
   }
 
   #about .content p {
@@ -1584,6 +1824,10 @@ footer .sub-footer .wrapper {
     height: 10rem;
 
     display: block;
+  }
+
+  #form iframe {
+    margin-top: 0rem;
   }
 
   /*======= CARD BANNER  =======================================================*/
@@ -1631,6 +1875,16 @@ footer .sub-footer .wrapper {
   }
 
   /*======= ABOUT-US  =======================================================*/
+
+  #about-us .wrapper {
+    grid-auto-rows: 1fr 1fr;
+    grid-template-areas:
+      'A A'
+      'B B'
+      'C C';
+    gap: 20rem;
+  }
+
   #about-us .col-a,
   #about-us .col-b,
   #about-us .col-c {
@@ -1649,8 +1903,9 @@ footer .sub-footer .wrapper {
   /*======= FORM  =======================================================*/
 
   .login-box form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   /*======= FOOTER  ==========================*/
@@ -1675,7 +1930,19 @@ footer .sub-footer .wrapper {
     justify-self: center;
   }
 
-  .social-links {
-    padding-top: 2.5rem;
+  /*======= Flip Box =======================================================*/
+
+  .flip-box-front {
+    flex-direction: row;
+  }
+  .flip-box-front img {
+    width: 50%;
+    height: 100%;
+  }
+  #services .flip-box-front h2 {
+    padding-top: 0;
+  }
+  .flip-box.invert .flip-box-front {
+    flex-direction: row-reverse;
   }
 }
