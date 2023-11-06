@@ -144,7 +144,7 @@ section p {
 .flip-box {
   background-color: transparent;
   width: 100%;
-  height: 370px;
+  height: 40rem;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -175,9 +175,6 @@ section p {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-  transform: rotateX(180deg);
-}
 
 /* Position the front and back side */
 .flip-box-front,
@@ -210,12 +207,24 @@ section p {
   object-fit: cover;
 }
 
+.flip-box-front .button-flip,
+.flip-box-back .button-flip {
+  margin-top: 1rem;
+  display: block;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.animate {
+  transform: rotateX(180deg);
+}
+
 /* Style the back side */
 .flip-box-back {
   transform: rotateX(180deg);
 
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -1154,8 +1163,11 @@ body.menu-expanded .close-menu path {
 }
 
 .login-box form {
-  margin-top: 4rem;
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  gap: 3rem;
 }
 
 .login-box h2 {
@@ -1186,7 +1198,6 @@ body.menu-expanded .close-menu path {
   padding: 10px;
   font-size: 16px;
   color: #000;
-  margin-bottom: 30px;
   border: 1px solid #cad1e1;
   border-radius: 0.4rem;
   outline: none;
@@ -1932,8 +1943,21 @@ footer .sub-footer p {
 
   /*======= Flip Box =======================================================*/
 
+  .flip-box {
+    height: 37rem;
+  }
+
   .flip-box-front {
     flex-direction: row;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+
+  .flip-box-front .button-flip,
+  .flip-box-back .button-flip {
+    display: none;
   }
   .flip-box-front img {
     width: 50%;

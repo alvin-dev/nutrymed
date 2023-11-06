@@ -351,27 +351,7 @@
           <h2>Formulário de pedido para cotação</h2>
         </header>
         <div class="login-box">
-          <form
-            action="https://formmail.kinghost.net/formmail.cgi"
-            method="POST"
-          >
-            <input
-              type="hidden"
-              name="recipient"
-              value="comercial@dalprize.com.br"
-            />
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://www.dalprize.com.br/form-send.html"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="Formulário Site Dalprize"
-            />
-            <input type="hidden" name="email" value="form@dalprize.com.br" />
-
+          <form action="send-cotacao.php" method="POST">
             <h3>Informações Pessoais:</h3>
 
             <div class="user-box">
@@ -482,7 +462,7 @@
                   name="pote-frasco"
                   value="Pote / Frasco"
                 />
-                <label for="pote-frasco"> Pote / Frasco </label>
+                <label for="pote-frasco"> Pote/Frasco </label>
               </span>
 
               <span>
@@ -527,7 +507,7 @@
                   name="lacre-externo"
                   value="Lacre Externo"
                 />
-                <label for="lacre-externo"> Lacre Externo </label>
+                <label for="lacre-externo"> Lacre Externo</label>
               </span>
             </div>
 
@@ -542,7 +522,12 @@
             </div>
 
             <div class="user-box">
-              <button type="submit" class="button" value="Enviar Mensagem">
+              <button
+                type="submit"
+                class="button"
+                name="BTEnvia"
+                value="Enviar Mensagem"
+              >
                 Enviar Mensagem
               </button>
             </div>

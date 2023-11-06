@@ -295,27 +295,7 @@
             </p>
           </header>
           <div class="login-box">
-            <form
-              action="https://formmail.kinghost.net/formmail.cgi"
-              method="POST"
-            >
-              <input
-                type="hidden"
-                name="recipient"
-                value="comercial@dalprize.com.br"
-              />
-              <input
-                type="hidden"
-                name="redirect"
-                value="https://www.dalprize.com.br/form-send.html"
-              />
-              <input
-                type="hidden"
-                name="subject"
-                value="Formulário Site Dalprize"
-              />
-              <input type="hidden" name="email" value="form@dalprize.com.br" />
-
+            <form action="send.php" method="POST">
               <div class="user-box">
                 <input type="text" name="nome" required="" />
                 <label>Nome</label>
@@ -330,14 +310,19 @@
                 <textarea
                   type="text"
                   rows="7"
-                  name="msg"
+                  name="mensagem"
                   required=""
                 ></textarea>
                 <label>Mensagem</label>
               </div>
 
               <div class="user-box">
-                <button type="submit" class="button" value="Enviar Mensagem">
+                <button
+                  type="submit"
+                  class="button"
+                  name="BTEnvia"
+                  value="Enviar Mensagem"
+                >
                   Enviar Mensagem
                 </button>
               </div>
@@ -521,7 +506,7 @@
       </div>
     </footer>
 
-    <a id="backToTopButton" href="https://wa.me/5521997350805" target="_blank">
+    <a id="backToTopButton" href="https://wa.me/556231018771" target="_blank">
       <img src="assets/icons/4375153_logo_whatsapp_icon.svg" alt="" />
     </a>
 

@@ -1,3 +1,37 @@
+/*========= Flip Button Services =========*/
+
+const boxes = document.querySelectorAll('.flip-box-inner')
+
+for (const box of boxes) {
+  box.addEventListener('click', function handleClick() {
+    box.classList.toggle('animate')
+  })
+}
+
+/*========= Scroll Reveal =========*/
+
+ScrollReveal({
+  reset: true,
+  origin: 'top',
+  distance: '30px',
+  duration: 800
+}).reveal(`
+#home .col-a,
+#home .col-b,
+#about-us .col-a,
+#about-us .col-b,
+#about-us .col-c,
+.cards,
+#about .col-b,
+.stats,
+.flip-box,
+#form .col-a,
+#form .col-b,
+.steps,
+.user-box `)
+
+/*========= / Scroll Reveal =========*/
+
 window.addEventListener('scroll', onScroll)
 
 onScroll()
@@ -66,28 +100,9 @@ function closeMenu() {
   document.body.classList.remove('menu-expanded')
 }
 
-/*========= Scroll Reveal =========*/
+/*========= Menu Fixed =========*/
 function fixedMenuOnScroll() {
   if (scrollY > 75) {
     navigationn.classList.add('fixed-menu')
   } else navigationn.classList.remove('fixed-menu')
 }
-
-/*========= Scroll Reveal =========*/
-
-ScrollReveal({
-  reset: true,
-  origin: 'top',
-  distance: '30px',
-  duration: 800
-}).reveal(`
-  #home, 
-  #home img, 
-  #home .stats, 
-  #services,
-  #services header,
-  #services .card,
-  #about,
-  #about header,
-  #about .content
-  `)
