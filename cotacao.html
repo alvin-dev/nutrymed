@@ -360,7 +360,7 @@
             </div>
 
             <div class="user-box">
-              <input type="tel" name="phone" required="" />
+              <input type="tel" id="phone" name="phone" required="" />
               <label>Telefone</label>
             </div>
 
@@ -382,7 +382,13 @@
             </div>
 
             <div class="user-box">
-              <input type="text" name="cnpj" required="" />
+              <input
+                type="text"
+                id="cnpj"
+                inputmode="numeric"
+                name="cnpj"
+                required=""
+              />
               <label>CNPJ</label>
             </div>
 
@@ -703,6 +709,7 @@
       <img src="assets/icons/4375153_logo_whatsapp_icon.svg" alt="" />
     </a>
 
+    <script src="https://unpkg.com/imask"></script>
     <script src="./main.js"></script>
   </body>
 </html>

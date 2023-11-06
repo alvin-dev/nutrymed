@@ -1139,6 +1139,10 @@ body.menu-expanded .close-menu path {
   gap: 5rem;
 }
 
+#form.contato .login-box {
+  margin-top: 2rem;
+}
+
 #form header {
   text-align: left;
 
