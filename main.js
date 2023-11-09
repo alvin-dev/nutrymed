@@ -1,25 +1,3 @@
-/*========= mask input =========*/
-const phone = document.getElementById('phone')
-const cnpj = document.getElementById('cnpj')
-
-const maskOption = {
-  mask: '(00) 0 0000.0000',
-  cnpj: '000.000.000/0000-00'
-}
-
-IMask(phone, maskOption.mask)
-IMask(cnpj, maskOption.cnpj)
-
-/*========= Flip Button Services =========*/
-
-const boxes = document.querySelectorAll('.flip-box-inner')
-
-for (const box of boxes) {
-  box.addEventListener('click', function handleClick() {
-    box.classList.toggle('animate')
-  })
-}
-
 /*========= Scroll Reveal =========*/
 
 ScrollReveal({
@@ -41,6 +19,28 @@ ScrollReveal({
 #form .col-b,
 .steps,
 .user-box `)
+
+/*========= mask input =========*/
+const phone = document.getElementById('phone')
+const cnpj = document.getElementById('cnpj')
+
+const maskOption = {
+  mask: '(00) 0 0000.0000',
+  cnpj: '000.000.000/0000-00'
+}
+
+IMask(phone, maskOption.mask)
+IMask(cnpj, maskOption.cnpj)
+
+/*========= Flip Button Services =========*/
+
+const boxes = document.querySelectorAll('.flip-box-inner')
+
+for (const box of boxes) {
+  box.addEventListener('click', function handleClick() {
+    box.classList.toggle('animate')
+  })
+}
 
 /*========= / Scroll Reveal =========*/
 
